@@ -1,0 +1,22 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: cloud-payment-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+    driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包 com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dbCLoud20216?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+  devtools:
+    restart:
+      poll-interval: 2000ms
+      quiet-period: 1999ms  #DevTools的检测时间和idea的编译所需时间存在差异。在idea还没完成编译工作前，DevTools就开始进行重启和加载，导致@RequestMapping没有被全部正常处理。其他方法没试，就直接用了看起来最简单的方法：牺牲一点时间，去加长devtools的轮询时间，增大等待时间。
+
+
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml    #mapper目录
+  type-aliases-package: com.lin.springcloud.entities    # 所有Entity别名类所在包
