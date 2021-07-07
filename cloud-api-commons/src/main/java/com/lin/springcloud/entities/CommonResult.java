@@ -5,10 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @author: lin lessbug
- * @Time: 2021/6/22  14:29
- * @descrtiption:前端妹子只认这个
- **/
+ * @author lin
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

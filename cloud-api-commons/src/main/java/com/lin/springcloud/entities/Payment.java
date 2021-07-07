@@ -7,10 +7,8 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * @author: lin lessbug
- * @Time: 2021/6/22  14:35
- * @descrtiption:
- **/
+ * @author lin
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
